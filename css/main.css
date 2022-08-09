@@ -1,0 +1,674 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -50px;
+    margin-top: -50px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+
+
+#home {
+    height: 1080px;
+    width: auto;
+    background-image:
+        url("/assets/SVGs/bg-home.svg");
+    background-position:
+        clamp(-550px, 20%, -600px) clamp(-600px, 50%, 100px); 
+    background-repeat: 
+        no-repeat;
+    background-size: clamp(1700px, 155% ,2700px);
+    position: relative;
+}
+
+.topBar {
+    margin-left: clamp(250px, 80%, 2000px);
+}
+
+.topBar a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-shadow: 0px 0px black;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: -5px -10px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.topBar a:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.topNav {
+    padding-top: 30px;
+    padding-right: 5%;
+    display: flex;
+    gap: min(2vw, 60px);
+    position: fixed;
+}
+
+.wrapper {
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+.home_name {
+    color: white;
+    font-size: 8em;
+    line-height: 140px;
+    padding-top: 300px;
+}
+
+.home_title {
+    font-size: 3rem;
+    margin-top: 25px;
+}
+
+.social_links {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+#about {
+    height: 1080px;
+    width: auto;
+    background-image:
+        url("/assets/SVGs/bg-about.svg");
+    background-position:
+        clamp(-200px, 20%, -800px) clamp(-600px, 50%, 100px); 
+    background-repeat: 
+        no-repeat;
+    background-size: clamp(1700px, 155% ,2700px);
+}
+
+.wrapper_about {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    grid-auto-rows: 205px;
+    grid-template-areas: 
+    "a1 a2 a3 a4"
+    "a5 a6 head head"
+    "a9 a10 body body"
+    "a13 a14 body2 body2"
+    "a17 a18 a19 a20";
+}
+
+.about_header {
+    grid-area: head;
+    align-self: start;
+    justify-self: left;
+}
+
+.about_body {
+    grid-area: body;
+    align-self: start;
+    justify-self: left;
+}
+
+.about_body2 {
+    grid-area: body2;
+    align-self: start;
+    justify-self: left;
+    padding-top: 70px;
+}
+
+
+#projects {
+    height: 1080px;
+    width: auto;
+    background-image:
+        url("/assets/SVGs/bg-projects.svg");
+    background-position:
+        clamp(-414px, 20%, -600px) clamp(-600px, 50%, 100px); 
+    background-repeat: 
+        no-repeat;
+    background-size: clamp(1700px, 155% ,2700px);
+}
+
+.wrapper_projects {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    grid-auto-rows: 205px;
+    grid-template-areas: 
+    "p1 p2 . ."
+    "phead phead . ."
+    "pbody p6 . ."
+    "pbody2 pbody2 . ."
+    "p9 p10 . .";
+}
+
+.projects_header {
+    grid-area: phead;
+    align-self: start;
+    justify-self: left;
+}
+
+.projects_title {
+    grid-area: phead;
+    align-self: end;
+    justify-self: left;
+    white-space: nowrap;
+}
+
+
+.projects_body {
+    grid-area: pbody;
+    align-self: start;
+    justify-self: left;
+    padding-top: 25px;
+}
+
+.projects_body2 {
+    grid-area: pbody2;
+    align-self: center;
+    justify-self: left;
+}
+
+#projects_two {
+    height: 1080px;
+    width: auto;
+    background-image:
+        url("/assets/SVGs/bg-projects-two.svg");
+    background-position:
+        clamp(575px, 450%, 795px) clamp(-600px, 50%, 100px); 
+    background-repeat: 
+        no-repeat;
+    background-size: clamp(1025px, 100% ,1500px);
+}
+
+.wrapper_projects_two {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    grid-auto-rows: 205px;
+    grid-template-areas: 
+    ". . . ."
+    "p2head p2head p2head2 p2head2"
+    "p2body p6 . p2body2"
+    "p2body3 p2body3 p2body4 p2body4"
+    ". . . .";
+}
+
+.projects_two_title {
+    grid-area: p2head;
+    align-self: start;
+    justify-self: left;
+}
+
+.projects_two_title2 {
+    grid-area: p2head2;
+    align-self: start;
+    justify-self: right;
+}
+
+.projects_two_body {
+    grid-area: p2body;
+    align-self: start;
+    justify-self: left;
+}
+
+.projects_two_body2 {
+    grid-area: p2body3;
+    align-self: start;
+    justify-self: left;
+}
+
+.projects_two_body3 {
+    grid-area: p2body2;
+    align-self: start;
+    justify-self: right;
+}
+
+.projects_two_body4 {
+    grid-area: p2body4;
+    align-self: start;
+    justify-self: right;
+}
+
+#resume {
+    height: 1080px;
+    width: auto;
+    background-image:
+        url("/assets/SVGs/bg-resume.svg");
+    background-position:
+        clamp(-650px, 20%, -800px) clamp(-400px, 50%, 100px); 
+    background-repeat: 
+        no-repeat;
+    background-size: clamp(1700px, 155% ,2700px);
+}
+
+.wrapper_resume {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    grid-auto-rows: 205px;
+    grid-template-areas: 
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve"
+    "thirteen fourteen fifteen sixteen"
+    "seventeen eighteen nineteen twenty";
+}
+
+.resume_header {
+    grid-area: five;
+    align-self: flex-end;
+    justify-self: left;
+    padding-left: 0px;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+
+.resume_intro {
+    grid-area: nine;
+    align-self: flex-start;
+    justify-self: left;
+    padding-left: 0px;
+    padding-top: 25px;
+    white-space: nowrap;
+}
+
+.resume_email {
+    grid-area: nine;
+    align-self: flex-end;
+    justify-self: left;
+    color: white;
+    font-size: 1.5em;
+}
+
+.resume_links {
+    grid-area: thirteen;
+    align-self: flex-start;
+    padding-top: 40px;
+    justify-self: left;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 35px;
+}
+
+.resume_body {
+    grid-area: thirteen;
+    align-self: flex-end;
+    justify-self: left;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    h1 {
+        font-size: 2.5em
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em
+    }
+
+    #home {
+        height: 844px;
+        width: auto;
+        background-image:
+            url("/assets/SVGs/bg-home-mobile.svg");
+        background-position:
+            50% 215px;
+        background-repeat: 
+            no-repeat;
+        background-size: 3000px;
+    }
+
+    .topBar {
+        margin-left: 0px;
+    }
+
+    .topNav {
+        gap: 10vw;
+        margin-left: min(5%, 35px);
+        margin-top: 50px;
+    }
+
+    .wrapper {
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        ".a."
+        ".b."
+        ".c."
+        ".d.";
+    }
+
+    .home_name {
+        color: black;
+        font-size: 4em;
+        line-height: 75px;
+        margin-top: -100px;
+        margin-left: 0px;
+        grid-area: a;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .home_name::first-letter {
+        color: #338DF5;
+    }
+
+    .home_title {
+        color: white;
+        font-size: 2rem;
+        grid-area: d;
+        align-self: top;
+        justify-self: center;
+        white-space: nowrap;
+        margin-top: 115px;
+    }
+
+    .social_links {
+        grid-area: d;
+        align-self: end;
+        justify-self: center;
+    }
+
+    .social_links a img {
+        height: 45px;
+        width: 45px;
+    }
+
+    #about {
+        height: 844px;
+        width: auto;
+        background-image:
+            url("/assets/SVGs/bg-about-mobile.svg");
+        background-position:
+            50% 115px;
+        background-repeat: 
+            no-repeat;
+        background-size: 3000px;
+    }
+
+    .wrapper_about {
+        display: grid;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "e e e"
+        ".f."
+        "g g g"
+        "h h h";
+    }
+
+    .about_header {
+        color: black;
+        grid-area: e;
+        align-self: start;
+        justify-self: center;
+        padding-top: 25px;
+    }
+
+    .about_header::first-letter {
+    color: #338DF5
+}
+
+    .about_body {
+        grid-area: g;
+        align-self: center;
+        justify-self: center;
+        padding-top: 270px;
+    }
+
+    .about_body2 {
+        display: none;
+    }
+
+    #projects {
+        height: 844px;
+        width: auto;
+        background-image:
+            url("/assets/SVGs/bg-projects-mobile.svg");
+        background-position:
+            50% -50px;
+        background-repeat: 
+            no-repeat;
+        background-size: 3000px;
+    }
+
+    .wrapper_projects {
+        display: grid;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "i i i"
+        ".j."
+        "k k pic"
+        "l l l";
+    }
+    
+    .projects_header {
+        grid-area: i;
+        color: black;
+        align-self: start;
+        justify-self: center;
+    }
+
+    .projects_header::first-letter {
+    color: #338DF5
+}
+    
+    .projects_title {
+        grid-area: j;
+        transform: translateY(40px);
+        align-self: end;
+        justify-self: center;    
+    }
+
+    .projects_body {
+        grid-area: k;
+        margin-top: 35px;
+        align-self: center;
+        justify-self: left;
+    }
+
+    .projects_body2 {
+        grid-area: l;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    #projects_two {
+        height: 844px;
+        width: auto;
+        background-image:
+            url("/assets/SVGs/bg-projects-two-mobile.svg");
+        background-position:
+            50% 400px;
+        background-repeat: 
+            no-repeat;
+        background-size: 3000px;
+    }
+
+    .wrapper_projects_two {
+        display: grid;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        "m m m"
+        "pic2 n n"
+        "o o o"
+        "p p pic3";
+    }
+
+    .projects_two_title {
+        grid-area: m;
+        align-self: start;
+        padding-top: 10px;
+        justify-self: center;
+    }
+    
+    .projects_two_title2 {
+        grid-area: o;
+        align-self: start;
+        justify-self: center;
+    }
+    
+    .projects_two_body {
+        grid-area: m;
+        padding-top: 60px;
+        align-self: start;
+        justify-self: center;
+    }
+    
+    .projects_two_body2 {
+        grid-area: n;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .projects_two_body3 {
+        grid-area: o;
+        padding-top: 60px;
+        align-self: start;
+        justify-self: center;
+    }
+    
+    .projects_two_body4 {
+        grid-area: p;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #resume {
+        height: 844px;
+        width: auto;
+        background-image:
+            url("/assets/SVGs/bg-resume-mobile.svg");
+        background-position:
+            49.5% 150px;
+        background-repeat: 
+            no-repeat;
+        background-size: 3000px;
+    }
+
+    .wrapper_resume {
+        display: grid;
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: 200px;
+        grid-template-areas: 
+        ".q."
+        ".r."
+        ".s."
+        ".t.";
+    }
+
+    .resume_header {
+        grid-area: q;
+        align-self: start;
+        justify-self: center;
+        padding-left: 0px;
+        color: black;
+    }
+
+    .resume_header::first-letter {
+        padding-top: 25px;
+        left: 5px;
+        color: #338DF5
+    }
+
+    .resume_intro {
+        grid-area: q;
+        align-self: end;
+        justify-self: center;
+        padding-bottom: 50px
+    }
+
+    .resume_email {
+        grid-area: t;
+        align-self: start;
+        justify-self: center;
+        padding-top: 50px;
+    }
+
+    .resume_links {
+        grid-area: t;
+        align-self: center;
+        justify-self: center;
+        padding-top: 30px;
+    }
+
+    .resume_body {
+        grid-area: t;
+        align-self: end;
+        justify-self: center;
+    }
+}

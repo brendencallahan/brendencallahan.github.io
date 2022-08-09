@@ -1,0 +1,1 @@
+have grey squares animate in when page loads on #Home then have some sort of repeating animation that indicates you should scroll down (will be in the space between name/title and the illustration of home-bg)
