@@ -11,6 +11,7 @@
   --font-small: 0.938rem;
   --font-med: 1.5rem;
   --font-large: 2.5rem;
+  --mobile-line-height: 1.25rem;
 }
 
 *, *::before, *::after {
@@ -70,6 +71,16 @@ header {
   background-image: linear-gradient(var(--black-opaque), var(--bg-main));
 }
 
+br {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  br {
+    display: initial;
+  }
+}
+
 .nav-bar {
   display: flex;
   align-items: flex-start;
@@ -93,23 +104,28 @@ header {
   justify-content: center;
   line-height: 4rem;
 }
-
 .name {
   font-size: 3.75rem;
 }
-
 .image-right-container {
   width: 22%;
   min-height: auto;
 }
-
 .image-left-container {
   width: 22%;
   min-height: auto;
 }
-
 .about-page {
   min-height: 60vh;
+}
+
+.spacer {
+  padding-top: 5%;
+}
+@media (max-width: 900px) {
+  .spacer {
+    padding-top: 15%;
+  }
 }
 
 .projects-page, .music-page {
@@ -125,6 +141,13 @@ header {
   flex: 1 1 auto;
   margin: 5% 0;
 }
+@media (max-width: 900px) {
+  .projects-page > article, .music-page > article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .article-right {
   flex-direction: row-reverse;
 }
@@ -136,7 +159,6 @@ header {
 .img-right > h2, .img-left > h2 {
   margin-bottom: 5%;
 }
-
 .img-right > img {
   width: 50%;
   margin-left: 15%;
@@ -151,6 +173,13 @@ header {
     -25px 25px 0 -5px var(--bg-main),
     -25px 25px 0 0 var(--white);
 }
+
+@media (max-width: 900px) {
+  .img-right > img, .img-left > img {
+    margin: auto;
+  }
+}
+
 .p-left, .p-right {
   min-width: 50%;
   margin-top: auto;
@@ -169,57 +198,28 @@ header {
   max-width: 60ch;
 }
 
+@media (max-width: 900px) {
+  .p-left > p, .p-left > ul, .p-right > p, .p-right > ul {
+    margin: 0 5% 0 5%;
+    line-height: var(--mobile-line-height);
+  }
+  .built-with {
+    padding-top: 10px;
+    justify-content: center;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.built-with {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  text-decoration: none;
+  column-gap: 25px;
+  padding-left: 10px;
+}
 .end {
   background-image: linear-gradient(var(--bg-main), var(--black-opaque));
 }
-
 .contact-page {
   min-height: 50vh;
   width: auto;
