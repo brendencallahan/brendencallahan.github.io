@@ -107,6 +107,9 @@ br {
 .name {
   font-size: 3.75rem;
 }
+.title {
+  text-align: center;
+}
 .about-page > h3{
   margin: 7% 0 0 17.5%;
 }
@@ -145,7 +148,7 @@ br {
   display: flex;
   flex-flow: column nowrap;
   flex: 1 1 auto;
-  padding-top: 5%;
+  padding-top: 2.5%;
   padding-bottom: 5%;
 }
 
@@ -271,16 +274,25 @@ br {
   column-gap: 100px;
 
 }
+.number {
+  margin-top: max(50px, 0.5vh);
+  margin-bottom: -30px;
+}
+@media (max-width: 900px) {
+  .number {
+    margin: 10px 0 -15px 0;
+  }
+  .contact-page {
+    line-height: 2.5rem;
+  }
+}
 @media (max-width: 600px) {
   .socials {
     column-gap: 50px;
   }
 }
 
-.number {
-  margin-top: max(50px, 0.5vh);
-  margin-bottom: -30px;
-}
+
  .copyright {
   text-align: center;
  }
