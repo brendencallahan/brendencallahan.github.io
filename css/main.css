@@ -2,10 +2,10 @@
 
 :root {
   --black: hsl(222, 63%, 3%);
-  --black-opaque: hsla(220, 60%, 3%, 0.80);
-  --white: #d4d5d8;
-  --white-opaque: hsla(225, 5%, 84%, 0.80);
-  --bg-main: #103b56;
+  --black-opaque: rgba(27, 31, 61, 0.664);
+  --white: rgba(212, 213, 216, 1);
+  --white-opaque: rgba(212, 213, 216, 0.8);
+  --bg-main: rgba(16, 59, 86, 1);
   --alex: 'Alexandria', sans-serif;
   --fira: 'Fira Code', monospace;
   --font-small: 0.938rem;
@@ -32,10 +32,7 @@ img, picture, svg, video {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-img {
-  border-radius: 80px;
+  border-radius: 5%;
 }
 
 h1, h2, h3 {
@@ -61,31 +58,102 @@ p, li {
   font-size: var(--font-small);
 }
 
-.image_left {
-  box-shadow: 5px -5px 0 -5px var(--bg-main),
-              5px -5px 0 0 #E2D4A6;
+hr {
+  color: var(--black-opaque);
+
+}
+.opaque {
+  color: var(--white-opaque);
 }
 
-.image_left_container {
-  width: 30%;
-  height: auto;
+header {
+  background-image: linear-gradient(var(--black-opaque), var(--bg-main));
 }
 
-.image_right {
-  size: 300px 400px;
-  box-shadow: 100px -100px 0 -5px var(--bg-main),
-              100px -100px 0 0 #E2D4A6;
+.nav-bar {
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
 }
 
-.image_right_container {
-  width: 30%;
-  height: auto;
+.nav-bar > li {
+  margin: 1.5% 2.5% 0 0%;
+}
+
+.landing_page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 4rem;
 }
 
 .name {
   font-size: 3.75rem;
 }
 
-.opaque {
-  color: var(--white-opaque);
+.image_right_container {
+  width: 22%;
+  height: auto;
 }
+
+.image_left_container {
+  width: 22%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.end {
+  background-image: linear-gradient(var(--bg-main), var(--black-opaque));
+}
+.contact_page {
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 4rem;
+}
+.socials {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 17%;
+  column-gap: 100px;
+
+}
+.number {
+  margin-top: 0.5%;
+  margin-bottom: -1.5%;
+}
+.email {
+  margin-bottom: 1.5%;
+}
+ .copyright {
+  text-align: center;
+ }
