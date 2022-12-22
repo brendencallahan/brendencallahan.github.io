@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 
-* {
+*, body, html {
   margin: 0;
   padding: 0;
   font: inherit;
@@ -85,7 +85,7 @@ header {
 }
 
 .landing_page {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -100,27 +100,29 @@ header {
 
 .image_right_container {
   width: 22%;
-  height: auto;
+  min-height: auto;
 }
 
 .image_left_container {
   width: 22%;
-  height: auto;
+  min-height: auto;
+}
+
+.about_page {
+  min-height: 60vh;
+}
+
+.projects_page {
+  min-height: 159vh;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.music_page {
+  min-height: 159vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+}
 
 
 
@@ -128,8 +130,9 @@ header {
 .end {
   background-image: linear-gradient(var(--bg-main), var(--black-opaque));
 }
+
 .contact_page {
-  height: 50vh;
+  min-height: 50vh;
   width: auto;
   display: flex;
   flex-direction: column;
