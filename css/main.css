@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --black: #03060d;
-  --white: #d3d4d7;
-  --bg-main: #103D58;
+  --black: hsl(222, 63%, 3%);
+  --black-opaque: hsla(220, 60%, 3%, 0.80);
+  --white: #d4d5d8;
+  --white-opaque: hsla(225, 5%, 84%, 0.80);
+  --bg-main: #103b56;
+  --alex: 'Alexandria', sans-serif;
+  --fira: 'Fira Code', monospace;
+  --font-small: 0.938rem;
+  --font-med: 1.5rem;
+  --font-large: 2.5rem;
 }
 
 *, *::before, *::after {
@@ -24,14 +31,61 @@ body {
 img, picture, svg, video {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: 80px;
 }
 
 h1, h2, h3 {
   color: var(--white);
-  font-family: 'Alexandria', sans-serif;
+  font-family: var(--alex)
+}
+
+h1 {
+  font-size: var(--font-large);
+}
+
+h2 {
+  font-size: var(--font-med);
+}
+
+h3 {
+  font-size: var(--font-small);
 }
 
 p, li {
   color: var(--white);
-  font-family: 'Fira Code', monospace;
+  font-family: var(--fira);
+  font-size: var(--font-small);
+}
+
+.image_left {
+  box-shadow: 5px -5px 0 -5px var(--bg-main),
+              5px -5px 0 0 #E2D4A6;
+}
+
+.image_left_container {
+  width: 30%;
+  height: auto;
+}
+
+.image_right {
+  size: 300px 400px;
+  box-shadow: 100px -100px 0 -5px var(--bg-main),
+              100px -100px 0 0 #E2D4A6;
+}
+
+.image_right_container {
+  width: 30%;
+  height: auto;
+}
+
+.name {
+  font-size: 3.75rem;
+}
+
+.opaque {
+  color: var(--white-opaque);
 }
