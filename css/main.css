@@ -107,18 +107,9 @@ br {
 .name {
   font-size: 3.75rem;
 }
-.image-right-container {
-  width: 22%;
-  min-height: auto;
+.about-page > h3{
+  margin: 7% 0 0 17.5%;
 }
-.image-left-container {
-  width: 22%;
-  min-height: auto;
-}
-.about-page {
-  min-height: 60vh;
-}
-
 .spacer {
   padding-top: 5%;
 }
@@ -128,7 +119,18 @@ br {
   }
 }
 
-.projects-page, .music-page {
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: calc(17% + 20px);
+  margin-bottom: 7%;
+  padding-top: 10px;
+  column-gap: 2.5%;
+}
+
+
+.projects-page, .music-page, .flex-wrapper {
   display: flex;
   flex-flow: column nowrap;
   flex: 1 1 auto;
@@ -136,13 +138,14 @@ br {
   padding-bottom: 5%;
 }
 
-.projects-page > article, .music-page > article {
+.projects-page > article, .music-page > article, .flex-wrapper > article {
   display: flex;
   flex: 1 1 auto;
   margin: 5% 0;
 }
+
 @media (max-width: 900px) {
-  .projects-page > article, .music-page > article {
+  .projects-page > article, .music-page > article, .flex-wrapper > article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -150,6 +153,21 @@ br {
 }
 .article-right {
   flex-direction: row-reverse;
+}
+.mocks {
+  margin-left: -100px;
+}
+.count {
+  padding-left: 100px;
+}
+.jimple {
+  padding-right: 25px;
+}
+@media (max-width: 900px) {
+    .mocks, .count, .jimple {
+    margin: 0;
+    padding: 0;
+  }
 }
 .img-right, .img-left {
   min-width: 50%;
@@ -193,7 +211,7 @@ br {
 }
 .p-right > p, .p-right > ul {
   margin-top: 2.5%;
-  margin-right: 20%;
+  margin-right: 35%;
   margin-left: 15%;
   max-width: 60ch;
 }
