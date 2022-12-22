@@ -59,10 +59,6 @@ p, li {
   font-size: var(--font-small);
 }
 
-hr {
-  color: var(--black-opaque);
-
-}
 .opaque {
   color: var(--white-opaque);
 }
@@ -73,6 +69,27 @@ header {
 
 br {
   display: none;
+}
+
+
+.title {
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  color: var(--white);
+}
+.title:before, .title:after {
+  content: "";
+  display: inline-block;
+  width: 25%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 2px solid var(--black-opaque);
+}
+.title:after {
+  margin: 0 -55% 0 .5em;
 }
 
 @media (max-width: 900px) {
@@ -109,6 +126,7 @@ br {
 }
 .title {
   text-align: center;
+  z-index: 5;
 }
 .about-page > h3{
   margin: 7% 0 0 17.5%;
