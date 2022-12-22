@@ -114,6 +114,10 @@ br {
   padding-top: 5%;
 }
 @media (max-width: 900px) {
+  .about-page > h3 {
+    margin: 10% 25% 3% 25%;
+    text-align: center;
+  }
   .spacer {
     padding-top: 15%;
   }
@@ -128,7 +132,14 @@ br {
   padding-top: 10px;
   column-gap: 2.5%;
 }
-
+@media (max-width: 900px) {
+  .technologies {
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-right: 20%;
+    column-gap: 25px;
+  }
+}
 
 .projects-page, .music-page, .flex-wrapper {
   display: flex;
@@ -224,6 +235,10 @@ br {
   .built-with {
     padding-top: 10px;
     justify-content: center;
+  }
+  .mobile-margin {
+    margin-top: 10%;
+    margin-bottom: 2.5%;
   }
 }
 
