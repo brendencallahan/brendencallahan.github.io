@@ -137,10 +137,10 @@ br {
 }
 @media (max-width: 900px) {
   .technologies {
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20%;
-    margin-right: 20%;
     column-gap: 25px;
+    margin-right: 15%;
   }
 }
 
@@ -291,8 +291,6 @@ br {
     column-gap: 50px;
   }
 }
-
-
  .copyright {
   text-align: center;
  }
