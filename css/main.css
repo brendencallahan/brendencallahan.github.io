@@ -238,6 +238,12 @@ br {
   column-gap: 100px;
 
 }
+@media (max-width: 600px) {
+  .socials {
+    column-gap: 50px;
+  }
+}
+
 .number {
   margin-top: max(50px, 0.5vh);
   margin-bottom: -30px;
