@@ -84,7 +84,7 @@ header {
   margin: 1.5% 2.5% 0 0%;
 }
 
-.landing_page {
+.landing-page {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -98,31 +98,120 @@ header {
   font-size: 3.75rem;
 }
 
-.image_right_container {
+.image-right-container {
   width: 22%;
   min-height: auto;
 }
 
-.image_left_container {
+.image-left-container {
   width: 22%;
   min-height: auto;
 }
 
-.about_page {
+.about-page {
   min-height: 60vh;
 }
 
-.projects_page {
-  min-height: 159vh;
+.projects-page, .music-page {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.projects-page > article, .music-page > article {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 5% 0;
+}
+.article-right {
+  flex-direction: row-reverse;
+}
+.img-right, .img-left {
+  min-width: 50%;
+  align-self: center;
+  text-align: center;
+}
+.img-right > h2, .img-left > h2 {
+  margin-bottom: 5%;
+}
+
+.img-right > img {
+  width: 50%;
+  margin-left: 15%;
+  box-shadow:
+    25px 25px 0 -5px var(--bg-main),
+    25px 25px 0 0 var(--white);
+}
+.img-left > img {
+  width: 50%;
+  margin-left: 35%;
+  box-shadow:
+    -25px 25px 0 -5px var(--bg-main),
+    -25px 25px 0 0 var(--white);
+}
+.p-left, .p-right {
+  min-width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: clamp(1rem, 2vw, 2rem);
+}
+.p-left > p, .p-left > ul {
+  margin-top: 2.5%;
+  margin-left: 35%;
+  max-width: 60ch;
+}
+.p-right > p, .p-right > ul {
+  margin-top: 2.5%;
+  margin-right: 20%;
+  margin-left: 15%;
+  max-width: 60ch;
 }
 
 
-.music_page {
-  min-height: 159vh;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -131,7 +220,7 @@ header {
   background-image: linear-gradient(var(--bg-main), var(--black-opaque));
 }
 
-.contact_page {
+.contact-page {
   min-height: 50vh;
   width: auto;
   display: flex;
@@ -143,19 +232,15 @@ header {
 .socials {
   display: flex;
   align-items: flex-start;
-  position: absolute;
+  position: relative;
   text-decoration: none;
   list-style: none;
-  margin-top: 17%;
   column-gap: 100px;
 
 }
 .number {
-  margin-top: 0.5%;
-  margin-bottom: -1.5%;
-}
-.email {
-  margin-bottom: 1.5%;
+  margin-top: max(50px, 0.5vh);
+  margin-bottom: -30px;
 }
  .copyright {
   text-align: center;
