@@ -213,7 +213,13 @@ br {
   transition: 0.5s;
 }
 
-.nav-bar > li > a:hover {
+.link-p {
+  color: var(--white);
+  text-decoration-color: transparent;
+  transition: all 0.5s;
+}
+
+.nav-bar > li > a:hover, .link-p:hover {
   text-decoration-color: var(--white-opaque);
 
 }
