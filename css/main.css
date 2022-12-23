@@ -165,7 +165,7 @@ br {
     position: fixed;
     display: block;
     cursor: pointer;
-    padding-left: 87.5%;
+    padding-left: 80%;
     padding-top: 5%;
   }
   .burger-icon.active .bar:nth-child(2) {
