@@ -24,6 +24,8 @@
   font: inherit;
 }
 
+html{scroll-behavior:smooth}
+
 body {
   min-height: 100vh;
   background-color: var(--bg-main);
@@ -71,7 +73,6 @@ br {
   display: none;
 }
 
-
 .title {
   width: 70%;
   margin: .7em auto;
@@ -80,6 +81,7 @@ br {
   font-weight:300;
   color: var(--white);
 }
+
 .title:before, .title:after {
   content: "";
   display: inline-block;
@@ -92,7 +94,98 @@ br {
   margin: 0 -55% 0 .5em;
 }
 
+.burger-bar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white);
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-item {
+  margin-left: 5rem;
+}
+
+.burger-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+
+.burger-link:hover{
+    color: #482ff7;
+}
+
+.burger-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
 @media (max-width: 900px) {
+  .burger-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .burger-bar {
+    display: flex;
+  }
+
+  .burger-menu.active {
+    left: 0;
+  }
+  .burger-item {
+    margin: 2.5rem 0;
+  }
+  .burger-icon {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    margin-left: 90%;
+    margin-top: 5%;
+  }
+  .burger-icon.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .burger-icon.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  .burger-icon.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+
   br {
     display: initial;
   }
@@ -100,7 +193,6 @@ br {
 
 .nav-bar {
   display: flex;
-  align-items: flex-start;
   position: fixed;
   justify-content: flex-end;
   text-decoration: none;
@@ -109,7 +201,35 @@ br {
 }
 
 .nav-bar > li {
-  margin: 1.5% 2.5% 0 0%;
+  margin: 2% 2.5% 0 0%;
+}
+
+.nav-bar > li > a {
+  text-decoration-color: transparent;
+  color: var(--white);
+  font-weight: 400;
+  font-size: var(--font-small);
+  filter: drop-shadow(0px 0px 15px var(--black));
+  transition: 0.5s;
+}
+
+.nav-bar > li > a:hover {
+  text-decoration-color: var(--white-opaque);
+
+}
+
+.burger-item {
+  list-style: none;
+}
+
+.burger-link {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .nav-bar {
+    display: none;
+  }
 }
 
 .landing-page {
@@ -121,19 +241,24 @@ br {
   justify-content: center;
   line-height: 4rem;
 }
+
 .name {
   font-size: 3.75rem;
 }
+
 .title {
   text-align: center;
   z-index: 5;
 }
+
 .about-page > h3{
   margin: 7% 0 0 17.5%;
 }
+
 .spacer {
   padding-top: 5%;
 }
+
 @media (max-width: 900px) {
   .about-page > h3 {
     margin: 10% 25% 3% 25%;
@@ -153,6 +278,7 @@ br {
   padding-top: 10px;
   column-gap: 2.5%;
 }
+
 @media (max-width: 900px) {
   .technologies {
     flex-direction: row;
@@ -183,32 +309,40 @@ br {
     align-items: center;
   }
 }
+
 .article-right {
   flex-direction: row-reverse;
 }
+
 .mocks {
   margin-left: -100px;
 }
+
 .count {
   padding-left: 100px;
 }
+
 .jimple {
   padding-right: 25px;
 }
+
 @media (max-width: 900px) {
     .mocks, .count, .jimple {
     margin: 0;
     padding: 0;
   }
 }
+
 .img-right, .img-left {
   min-width: 50%;
   align-self: center;
   text-align: center;
 }
+
 .img-right > h2, .img-left > h2 {
   margin-bottom: 5%;
 }
+
 .img-right > img {
   width: 50%;
   margin-left: 15%;
@@ -216,6 +350,7 @@ br {
     25px 25px 0 -5px var(--bg-main),
     25px 25px 0 0 var(--white);
 }
+
 .img-left > img {
   width: 50%;
   margin-left: 35%;
@@ -236,11 +371,13 @@ br {
   margin-bottom: auto;
   line-height: clamp(1rem, 2vw, 2rem);
 }
+
 .p-left > p, .p-left > ul {
   margin-top: 2.5%;
   margin-left: 35%;
   max-width: 60ch;
 }
+
 .p-right > p, .p-right > ul {
   margin-top: 2.5%;
   margin-right: 35%;
@@ -271,9 +408,11 @@ br {
   column-gap: 25px;
   padding-left: 10px;
 }
+
 .end {
   background-image: linear-gradient(var(--bg-main), var(--black-opaque));
 }
+
 .contact-page {
   min-height: 50vh;
   width: auto;
@@ -283,6 +422,7 @@ br {
   justify-content: center;
   line-height: 4rem;
 }
+
 .socials {
   display: flex;
   align-items: flex-start;
@@ -292,10 +432,12 @@ br {
   column-gap: 100px;
 
 }
+
 .number {
   margin-top: max(50px, 0.5vh);
   margin-bottom: -30px;
 }
+
 @media (max-width: 900px) {
   .number {
     margin: 10px 0 -15px 0;

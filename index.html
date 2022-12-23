@@ -11,11 +11,35 @@
   <header>
     <nav>
       <ul class="nav-bar">
-        <li>&ltAbout&gt</li>
-        <li>&ltProjects&gt</li>
-        <li>&ltMusic&gt</li>
-        <li>&ltContact&gt</li>
+        <li><a href="#about">&ltAbout&gt</a></li>
+        <li><a href="#projects">&ltProjects&gt</a></li>
+        <li><a href="#music">&ltMusic&gt</a></li>
+        <li><a href="#contact">&ltContact&gt</a></li>
       </ul>
+
+      <div class="header">
+        <div class="burger-bar">
+          <ul class="burger-menu">
+            <li class="burger-item">
+              <a href="#about" class="burger-link">&ltAbout&gt</a>
+            </li>
+            <li class="burger-item">
+              <a href="#projects" class="burger-link">&ltProjects&gt</a>
+            </li>
+            <li class="burger-item">
+              <a href="#music" class="burger-link">&ltMusic&gt</a>
+            </li>
+            <li class="burger-item">
+              <a href="#contact" class="burger-link">&ltContact&gt</a>
+            </li>
+          </ul>
+          <div class="burger-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
     </nav>
     <section class="landing-page">
       <h2 class="opaque">Hi, my name is</h2>
@@ -26,7 +50,7 @@
     </section>
   </header>
   <main>
-    <h1 class="title">About Me</h1>
+    <h1 class="title" id="about">About Me</h1>
     <section class="about-page">
       <h3 class="opaque">
         &ltI am a Software Engineer with a background as a classically trained Musician.&gt
@@ -61,7 +85,7 @@
         <li>Figma</li>
       </ul>
     </section>
-    <h1 class="title">My Projects</h1>
+    <h1 class="title" id="projects">My Projects</h1>
     <section class="projects-page">
       <article class="article-left">
         <div class="img-left">
@@ -115,7 +139,7 @@
         </div>
       </article>
     </section>
-    <h1 class="title">My Music</h1>
+    <h1 class="title" id="music">My Music</h1>
     <section class="music-page">
       <article class="article-right">
         <div class="img-right">
@@ -153,7 +177,7 @@
     </section>
   </main>
   <footer class="end">
-    <h1 class="title">Contact Me</h1>
+    <h1 class="title" id="contact">Contact Me</h1>
     <section class="contact-page">
       <h1>Thanks for visiting</h1>
       <h2 class="opaque">&ltPlease reach out <br> however you see fit.&gt</h2>
@@ -167,5 +191,6 @@
     </section>
     <p class="opaque copyright">Copyright 2022 Brenden Callahan</p>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>
