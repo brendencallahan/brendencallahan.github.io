@@ -369,7 +369,7 @@ br {
   max-width: 60ch;
 }
 
-.p-right > p, .p-right > ul {
+.p-right > p, .p-right > ul, .audio-right {
   margin-top: 2.5%;
   margin-right: 35%;
   margin-left: 15%;
@@ -381,7 +381,7 @@ br {
     margin: 0 5% 0 5%;
     line-height: var(--mobile-line-height);
   }
-  .audio-left {
+  .audio-left, .audio-right {
     margin: 5% 5% 0 5%;
   }
   .built-with {
@@ -435,6 +435,8 @@ br {
 @media (max-width: 900px) {
   .number {
     margin: 10px 0 -15px 0;
+    text-decoration: underline;
+    color: var(--white);
   }
   .contact-page {
     line-height: 2.5rem;
