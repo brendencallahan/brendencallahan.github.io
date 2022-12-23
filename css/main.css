@@ -427,6 +427,16 @@ br {
 
 }
 
+.social-link {
+  text-decoration: none;
+}
+
+.social-link > img {
+  height: 90%;
+  width: 90%;
+  padding-top: 50px;
+}
+
 .number {
   margin-top: max(50px, 0.5vh);
   margin-bottom: -30px;
