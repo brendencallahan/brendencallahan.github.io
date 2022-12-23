@@ -466,10 +466,10 @@ br {
 
 @media (max-width: 900px) {
   .small-spacer {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
   .number {
-    margin: 50px 0 -15px 0;
+    margin: 25px 0 -15px 0;
     text-decoration: none;
     color: var(--white);
   }
