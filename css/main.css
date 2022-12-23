@@ -126,19 +126,12 @@ br {
 }
 
 .burger-link {
-  font-size: 1.6rem;
+  font-size: var(--font-med);
   font-weight: 400;
-  color: #475569;
+  color: var(--bg-main);
 }
-
 
 .burger-link:hover{
-    color: #482ff7;
-}
-
-.burger-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
     color: #482ff7;
 }
 
@@ -149,8 +142,9 @@ br {
     top: 5rem;
     flex-direction: column;
     background-color: var(--white);
-    width: 100%;
-    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 8px;
     text-align: center;
     transition: 0.3s;
     box-shadow:
@@ -171,8 +165,8 @@ br {
     position: fixed;
     display: block;
     cursor: pointer;
-    margin-left: 90%;
-    margin-top: 5%;
+    padding-left: 87.5%;
+    padding-top: 5%;
   }
   .burger-icon.active .bar:nth-child(2) {
       opacity: 0;
@@ -183,9 +177,6 @@ br {
   .burger-icon.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
   }
-
-
-
   br {
     display: initial;
   }
