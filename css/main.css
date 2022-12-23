@@ -391,8 +391,12 @@ br {
     line-height: var(--mobile-line-height);
   }
   .audio-left, .audio-right {
-    margin: 5% 5% 0 5%;
+    margin: 0;
+    padding-top: 25px;
+    align-self: center;
+    text-align: center;
   }
+
   .built-with {
     padding-top: 10px;
     justify-content: center;
