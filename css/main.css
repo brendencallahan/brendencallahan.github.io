@@ -74,7 +74,7 @@ br {
 }
 
 .title {
-  width: 70%;
+  width: 75%;
   margin: .7em auto;
   overflow: hidden;
   text-align: center;
@@ -85,7 +85,7 @@ br {
 .title:before, .title:after {
   content: "";
   display: inline-block;
-  width: 25%;
+  width: 35%;
   margin: 0 .5em 0 -55%;
   vertical-align: middle;
   border-bottom: 2px solid var(--black-opaque);
@@ -363,7 +363,7 @@ br {
   line-height: clamp(1rem, 2vw, 2rem);
 }
 
-.p-left > p, .p-left > ul {
+.p-left > p, .p-left > ul, .audio-left {
   margin-top: 2.5%;
   margin-left: 35%;
   max-width: 60ch;
@@ -377,9 +377,12 @@ br {
 }
 
 @media (max-width: 900px) {
-  .p-left > p, .p-left > ul, .p-right > p, .p-right > ul {
+  .p-left > p, .p-left > ul, .p-right > p, .p-right > ul{
     margin: 0 5% 0 5%;
     line-height: var(--mobile-line-height);
+  }
+  .audio-left {
+    margin: 5% 5% 0 5%;
   }
   .built-with {
     padding-top: 10px;
