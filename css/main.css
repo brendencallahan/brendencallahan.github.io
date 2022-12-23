@@ -94,6 +94,15 @@ br {
   margin: 0 -55% 0 .5em;
 }
 
+@media (max-width: 900px) {
+  .title {
+    width: 90%;
+  }
+  .title:before, .title:after {
+    width: 50%;
+  }
+}
+
 .burger-bar {
   display: none;
   justify-content: space-between;
@@ -446,6 +455,11 @@ br {
   font-size: 1.05rem;
 }
 
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
 @media (max-width: 900px) {
   .number {
     margin: 10px 0 -15px 0;
@@ -461,6 +475,3 @@ br {
     column-gap: 50px;
   }
 }
- .copyright {
-  text-align: center;
- }
