@@ -435,7 +435,7 @@ br {
 @media (max-width: 900px) {
   .number {
     margin: 10px 0 -15px 0;
-    text-decoration: underline;
+    text-decoration: none; 
     color: var(--white);
   }
   .contact-page {
