@@ -375,6 +375,7 @@ br {
 .p-left > p, .p-left > ul, .audio-left {
   margin-top: 2.5%;
   margin-left: 35%;
+  margin-right: 15%;
   max-width: 60ch;
 }
 
@@ -384,6 +385,16 @@ br {
   margin-left: 15%;
   max-width: 60ch;
 }
+.built-with {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  text-decoration: none;
+  column-gap: 30px;
+  padding-left: 10px;
+}
+
 
 @media (max-width: 900px) {
   .p-left > p, .p-left > ul, .p-right > p, .p-right > ul{
@@ -405,15 +416,6 @@ br {
     margin-top: 10%;
     margin-bottom: 2.5%;
   }
-}
-
-.built-with {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  text-decoration: none;
-  column-gap: 25px;
-  padding-left: 10px;
 }
 
 .end {
