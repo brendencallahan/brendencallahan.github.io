@@ -461,7 +461,8 @@ br {
 
 .copyright {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
+  color: var(--white-opaque)
 }
 
 @media (max-width: 900px) {
@@ -483,5 +484,8 @@ br {
 @media (max-width: 600px) {
   .socials {
     column-gap: 50px;
+  }
+  .copyright {
+    font-size: 0.5rem;
   }
 }
