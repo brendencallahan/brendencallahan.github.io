@@ -16,3 +16,17 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden, .hidden-left, .hidden-right");
+hiddenElements.forEach((el) => observer.observe(el));

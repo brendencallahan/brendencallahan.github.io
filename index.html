@@ -44,15 +44,15 @@
       </div>
     </nav>
     <section class="landing-page">
-      <h2 class="opaque">Hi, my name is</h2>
-      <h1 class="name">Brenden <br> Callahan</h1>
-      <p class="opaque">
+      <h2 class="hidden opaque">Hi, my name is</h2>
+      <h1 class="hidden name">Brenden <br> Callahan</h1>
+      <p class="hidden opaque">
         &ltI build highly performant web<br>apps that people love to use.&gt
       </p>
     </section>
   </header>
   <main>
-    <h1 class="title" id="about">About Me</h1>
+    <h1 class="hidden title" id="about">About Me</h1>
     <section class="about-page">
       <h3 class="opaque">
         &ltI am a Software Engineer with a background as a classically trained Musician.&gt
@@ -60,10 +60,10 @@
       <br>
       <div class="flex-wrapper" style="padding: 0;">
         <article class="article-right" style="margin: 0;">
-          <div class="img-right">
-            <img class="" src="./assets/images/profile_pic.jpeg" alt="Picture of me playing a soprano saxophone">
+          <div class="hidden-right img-right">
+            <img src="./assets/images/profile_pic.jpeg" alt="Picture of me playing a soprano saxophone">
           </div>
-          <div class="p-left mobile-margin">
+          <div class="hidden-left p-left mobile-margin">
             <p>
               I focus on making web apps that are accessible, mobile-friendly, and fast. My passion is to create things that people enjoy, whether it is software, music, or anything else that can be collaborated on.
             </p>
@@ -76,7 +76,7 @@
           </div>
         </article>
       </div>
-      <ul class="technologies">
+      <ul class="hidden-left technologies">
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>Python</li>
@@ -88,12 +88,12 @@
         <li>Figma</li>
       </ul>
     </section>
-    <h1 class="title" id="projects">My Projects</h1>
+    <h1 class="hidden title" id="projects">My Projects</h1>
     <section class="projects-page">
       <article class="article-left">
         <div class="img-left">
           <h2 class="mocks">Mocks</h2>
-          <img src="./assets/images/mocks.png" alt="">
+          <img class="hidden-left " src="./assets/images/mocks.png" alt="">
         </div>
         <div class="p-right">
           <p class="spacer">
@@ -112,7 +112,7 @@
       <article class="article-right">
         <div class="img-right">
           <h2>Hospital Helper</h2>
-          <img src="./assets/images/hospital.PNG" alt="">
+          <img class="hidden-right" src="./assets/images/hospital.PNG" alt="">
         </div>
         <div class="p-left">
           <p class="spacer">
@@ -131,7 +131,7 @@
       <article class="article-left">
         <div class="img-left">
           <h2>GitHub</h2>
-          <img src="./assets/images/github.PNG" alt="">
+          <img class="hidden-left" src="./assets/images/github.PNG" alt="">
         </div>
         <div class="p-right">
           <p class="spacer">
@@ -148,16 +148,16 @@
         </div>
       </article>
     </section>
-    <h1 class="title" id="music">My Music</h1>
+    <h1 class="hidden title" id="music">My Music</h1>
     <section class="music-page">
       <article class="article-right">
         <div class="img-right">
           <h2 class="count">Count</h2>
-          <img src="./assets/images/count.PNG" alt="Sheet music for the piece Count">
+          <img class="hidden-right " src="./assets/images/count.PNG" alt="Sheet music for the piece Count">
         </div>
         <div class="p-left">
           <p class="spacer">
-            Count is a personal challenge that I had wanted to complete for a while. Every measure is a different time signature, in descending order, i.e. the first measure is in 8/8, the second in 7/8, etc. until it loops back from 1/8 to 8/8. If you're not familiar with music this essentially means it's hard to tap your foot along with it.
+            Count was a personal challenge that I had wanted to complete for a while. Every measure is a different time signature, in descending order, i.e. the first measure is in 8/8, the second in 7/8, etc. until it loops back from 1/8 to 8/8. If you're not familiar with music this essentially means it's hard to tap your foot along with it.
           </p>
           <br>
           <p class="opaque">Here's a snippet:</p>
@@ -175,7 +175,7 @@
       <article class="article-left">
         <div class="img-left">
           <h2 class="jimple">Jimple Slosh</h2>
-          <img src="./assets/images/jimple_slosh.PNG" alt="Sheet music for the piece Jimple Slosh">
+          <img class="hidden-left " src="./assets/images/jimple_slosh.PNG" alt="Sheet music for the piece Jimple Slosh">
         </div>
         <div class="p-right">
           <p class="spacer">
@@ -197,11 +197,11 @@
       <article class="article-right">
         <div class="img-right">
           <h2 class="expectations">Expectations</h2>
-          <img src="./assets/images/expectations.PNG" alt="Sheet music for the piece Expectations">
+          <img class="hidden-right " src="./assets/images/expectations.PNG" alt="Sheet music for the piece Expectations">
         </div>
         <div class="p-left">
           <p class="spacer">
-            Expectations is a piece written to be performed at NASA (The North American Saxophone Alliance). Despite this not happening, I was still able to get a decent recording performed by my saoxphone studio with me playing Alto Sax.
+            Expectations was a piece written to be performed at NASA (The North American Saxophone Alliance). Despite this not happening, I was still able to get a decent recording performed by my saoxphone studio with me playing Alto Sax.
           </p>
           <br>
           <p class="opaque">Here's a snippet:</p>
@@ -219,13 +219,13 @@
     </section>
   </main>
   <footer class="end">
-    <h1 class="title" id="contact">Contact Me</h1>
+    <h1 class="hidden title" id="contact">Contact Me</h1>
     <section class="contact-page">
       <h1 class="small-spacer">Thanks for visiting</h1>
       <h2 class="opaque">&ltPlease reach out <br> however you see fit.&gt</h2>
       <p class="number">(208) 957-0988</p>
       <p class="email">brendenkcallahan@gmail.com</p>
-      <ul class="socials">
+      <ul class="hidden socials">
         <li>
           <a class="social-link" href="https://github.com/brendencallahan">
             <img src="/assets/SVGs/github_logo.svg" alt="Logo for GitHub">
