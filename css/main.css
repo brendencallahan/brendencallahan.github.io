@@ -32,6 +32,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 img, picture, svg, video {
   display: block;
   max-width: 100%;
