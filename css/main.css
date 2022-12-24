@@ -83,7 +83,7 @@ br {
 .hidden, .hidden-left, .hidden-right {
   opacity: 0;
   filter: blur(2.5px);
-  transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .hidden-left {
