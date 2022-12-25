@@ -230,6 +230,7 @@ br {
   text-decoration: none;
   list-style: none;
   width: 100%;
+  z-index: 10;
 }
 
 .nav-bar > li {
@@ -237,16 +238,17 @@ br {
 }
 
 .nav-bar > li > a {
+  text-shadow: 0px 0px 5px var(--black);
   text-decoration-color: transparent;
   color: var(--white);
   font-weight: 400;
   font-size: 1.125rem;
-  filter: drop-shadow(0px 0px 15px var(--black));
   transition: 0.5s;
 }
 
 .link-p {
   color: var(--white);
+  text-shadow: 0px 0px 5px var(--black);
   text-decoration-color: transparent;
   transition: all 0.5s;
 }
