@@ -471,6 +471,7 @@ br {
   align-items: center;
   justify-content: center;
   line-height: 4rem;
+  text-align: center;
 }
 
 .socials {
