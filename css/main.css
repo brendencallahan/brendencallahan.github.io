@@ -206,8 +206,9 @@ br {
     position: fixed;
     display: block;
     cursor: pointer;
-    padding-left: 80%;
-    padding-top: 5%;
+    margin-left: 80%;
+    margin-top: 5%;
+    z-index: 10;
   }
   .burger-icon.active .bar:nth-child(2) {
       opacity: 0;
