@@ -125,7 +125,7 @@ br {
   margin: 0 -55% 0 .5em;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .title {
     width: 90%;
   }
@@ -175,7 +175,7 @@ br {
     color: #482ff7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .burger-menu {
     position: fixed;
     left: -100%;
@@ -267,7 +267,7 @@ br {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .nav-bar {
     display: none;
   }
@@ -300,7 +300,7 @@ br {
   padding-top: 5%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .about-page > h3 {
     margin: 10% 25% 3% 25%;
     text-align: center;
@@ -320,7 +320,7 @@ br {
   column-gap: 2.5%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .technologies {
     flex-direction: row;
     flex-wrap: wrap;
@@ -343,7 +343,7 @@ br {
   margin: 5% 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .projects-page > article, .music-page > article, .flex-wrapper > article {
     flex-direction: column;
     justify-content: center;
@@ -367,7 +367,7 @@ br {
   padding-right: 25px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .mocks, .count, .jimple {
     margin: 0;
     padding: 0;
@@ -400,7 +400,7 @@ br {
     -25px 25px 0 0 var(--white);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .img-right > img, .img-left > img {
     margin: auto;
   }
@@ -437,7 +437,7 @@ br {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .p-left > p, .p-left > ul, .p-right > p, .p-right > ul{
     margin: 0 5% 0 5%;
     line-height: var(--mobile-line-height);
@@ -517,7 +517,7 @@ br {
   color: var(--white-opaque)
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .small-spacer {
     padding-bottom: 25px;
   }
