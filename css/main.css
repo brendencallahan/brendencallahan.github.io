@@ -104,6 +104,52 @@ br {
 
 /* End Animations */
 
+
+.button-link {
+  background-color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--black);
+  margin-top: 2.5%;
+  float: right;
+  font-size: var(--font-small);
+  font-weight: 500;
+  padding: 5px 10px;
+  box-shadow: 2.5px 2.5px 2.5px var(--black-opaque);
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  appearance: button;
+  transition: all 0.5s;
+}
+
+.button-link:hover {
+  transform: translateY(-5px);
+}
+
+.button-right {
+  margin-right: 35%;
+  margin-left: 15%
+}
+
+.button-left {
+  margin-right: 25%;
+  margin-left: 15%;
+}
+
+@media (max-width: 1100px) {
+
+  .button-right {
+    margin-right: 35%;
+    margin-left: 5%;
+  }
+  .button-left {
+
+    margin-left: 5%;
+    margin-right: 35%;
+  }
+}
+
+
 .title {
   width: 75%;
   margin: .7em auto;
@@ -306,7 +352,7 @@ br {
     text-align: center;
   }
   .spacer {
-    padding-top: 15%;
+    padding-top: 10%;
   }
 }
 
