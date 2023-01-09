@@ -356,6 +356,10 @@ br {
   }
 }
 
+.button-spacer {
+  padding-top: 5%;
+}
+
 .technologies {
   display: flex;
   flex-direction: row;
