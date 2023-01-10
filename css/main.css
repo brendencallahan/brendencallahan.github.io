@@ -118,6 +118,7 @@ button {
   border-radius: 5px;
   transition: all 0.5s;
   box-shadow: 2.5px 2.5px 2.5px var(--black-opaque);
+  color: var(--black);
   font-size: var(--font-small);
   font-weight: 500;
 }
