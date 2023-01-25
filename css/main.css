@@ -5,7 +5,7 @@
   --black-opaque: rgba(27, 31, 61, 0.829);
   --white: rgba(212, 213, 216, 1);
   --white-opaque: rgba(212, 213, 216, 0.8);
-  --bg-main: "#eefcff";
+  --bg-main: #ffffff;
   --alex: 'Alexandria', sans-serif;
   --fira: 'Fira Code', monospace;
   --font-small: 0.938rem;
@@ -75,7 +75,7 @@ p, li {
 }
 
 header {
-  background-image: linear-gradient(var(--black-opaque), var(--bg-main));
+  background-image: linear-gradient(var(--white-opaque), var(--bg-main));
 }
 
 br {
@@ -420,7 +420,7 @@ br {
   margin-left: 15%;
   box-shadow:
     25px 25px 0 -5px var(--bg-main),
-    25px 25px 0 0 var(--white);
+    25px 25px 1px -2.5px var(--black);
 }
 
 .img-left > img {
@@ -428,7 +428,7 @@ br {
   margin-left: 35%;
   box-shadow:
     -25px 25px 0 -5px var(--bg-main),
-    -25px 25px 0 0 var(--white);
+    -25px 25px 1px -2.5px var(--black);
 }
 
 @media (max-width: 1100px) {
@@ -491,7 +491,7 @@ br {
 }
 
 .end {
-  background-image: linear-gradient(var(--bg-main), var(--black-opaque));
+  background-image: linear-gradient(var(--bg-main), var(--white-opaque));
 }
 
 .contact-page {
