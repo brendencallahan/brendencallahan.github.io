@@ -198,7 +198,7 @@ br {
 .burger-link {
   font-size: var(--font-med);
   font-weight: 400;
-  color: var(--bg-main);
+  color: var(--black);
 }
 
 .burger-link:hover{
@@ -269,9 +269,8 @@ br {
 }
 
 .nav-bar > li > a {
-  text-shadow: 0px 0px 5px var(--black);
   text-decoration-color: transparent;
-  color: var(--white);
+  color: var(--black);
   font-weight: 400;
   font-size: 1.125rem;
   transition: 0.5s;
@@ -285,7 +284,7 @@ br {
 }
 
 .nav-bar > li > a:hover, .link-p:hover {
-  text-decoration-color: var(--white-opaque);
+  text-decoration-color: var(--black-opaque);
 
 }
 
