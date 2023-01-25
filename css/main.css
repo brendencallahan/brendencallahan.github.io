@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --black: hsl(222, 63%, 3%);
-  --black-opaque: rgba(27, 31, 61, 0.664);
+  --black: rgb(3, 6, 12);
+  --black-opaque: rgba(27, 31, 61, 0.829);
   --white: rgba(212, 213, 216, 1);
   --white-opaque: rgba(212, 213, 216, 0.8);
-  --bg-main: rgba(16, 59, 86, 1);
+  --bg-main: "#eefcff";
   --alex: 'Alexandria', sans-serif;
   --fira: 'Fira Code', monospace;
   --font-small: 0.938rem;
@@ -43,8 +43,12 @@ img, picture, svg, video {
   border-radius: 5%;
 }
 
+img {
+  border: 1px solid var(--black-opaque)
+}
+
 h1, h2, h3 {
-  color: var(--white);
+  color: var(--black);
   font-family: var(--alex)
 }
 
@@ -61,13 +65,13 @@ h3 {
 }
 
 p, li {
-  color: var(--white);
+  color: var(--black-opaque);
   font-family: var(--fira);
   font-size: var(--font-small);
 }
 
 .opaque {
-  color: var(--white-opaque);
+  color: var(--black-opaque);
 }
 
 header {
@@ -112,18 +116,20 @@ br {
   padding-top: 80px;
 }
 
-button {
+.button-link {
   padding: 2.5px 10px;
-  background-color: var(--white);
+  background-color: var(--bg-main);
   border-radius: 5px;
   transition: all 0.5s;
-  box-shadow: 2.5px 2.5px 2.5px var(--black-opaque);
+  border: 1px solid var(--black-opaque);
+  box-shadow: 0px 2.5px 2.5px var(--black-opaque);
   color: var(--black);
   font-size: var(--font-small);
   font-weight: 500;
+  text-decoration: none;
 }
 
-button:hover {
+.button-link:hover {
   transform: translateY(-5px);
 }
 
@@ -134,7 +140,7 @@ button:hover {
   overflow: hidden;
   text-align: center;
   font-weight:300;
-  color: var(--white);
+  color: var(--black);
 }
 
 .title:before, .title:after {
@@ -176,7 +182,7 @@ button:hover {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--white);
+  background-color: var(--black-opaque);
 }
 
 .burger-menu {
@@ -506,7 +512,6 @@ button:hover {
   text-decoration: none;
   list-style: none;
   column-gap: 100px;
-
 }
 
 .social-link {
@@ -515,6 +520,8 @@ button:hover {
 
 .social-link > img {
   transition: all 0.5s;
+  border: none;
+  color: var(--black)
 }
 
 .social-link > img:hover {
@@ -539,7 +546,7 @@ button:hover {
 .copyright {
   text-align: center;
   font-size: 0.65rem;
-  color: var(--white-opaque)
+  color: var(--black)
 }
 
 @media (max-width: 1100px) {
@@ -549,7 +556,7 @@ button:hover {
   .number {
     margin: 25px 0 -15px 0;
     text-decoration: none;
-    color: var(--white);
+    color: var(--black-opaque);
   }
   .social-link > img {
     padding-top: 10px;
